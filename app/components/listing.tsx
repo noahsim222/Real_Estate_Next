@@ -1,10 +1,10 @@
 'use client'
 
 import Image from "next/image"
-import { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 
-const Listing = () => {
-  const [elementHeight, setElementHeight] = useState<number>();
+const Listing:React.FC = () => {
+  const [elementHeight, setElementHeight] = useState<number | undefined>(undefined);
   const elementRef = useRef<HTMLDivElement>(null)
 
   const updateHeight = () => {

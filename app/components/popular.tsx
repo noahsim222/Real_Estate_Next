@@ -1,6 +1,14 @@
 import Image from "next/image"
+import React from "react"
 
-const populars = [
+interface PopularItem {
+  image: string, 
+  title: string, 
+  des: string, 
+  bio: string, 
+}
+
+const populars: PopularItem[] = [
   {
     image: '/01_NewListings.webp',
     title: '01_NewListings',
@@ -39,12 +47,12 @@ const populars = [
   },
 ]
 
-const Popular = () => {
+const Popular:React.FC = () => {
   return (
     <div className="pt-10 pb-20 flex flex-col justify-center items-center">
       <h1 className="text-4xl font-bold py-10 px-5 max-[540px]:text-3xl text-center">Recent Popular Real Estate</h1>
       <div className="p-5 grid lg:grid-cols-3 sm:grid-cols-2 gap-10 ">
-        {populars.map(p => (
+        {populars.map((p: PopularItem) => (
           <div key={p.image} className="grid gap-4 border-2 rounded-2xl text-center text-[#636363] hover:text-black hover:shadow-2xl duration-200">
             <Image
               src={p.image}

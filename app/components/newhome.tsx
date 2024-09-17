@@ -1,6 +1,7 @@
 import Image from "next/image"
+import React from "react"
 
-const Newhome = () => {
+const Newhome:React.FC = () => {
   return (
     <div className="p-5  relative">
       <div className="rounded-3xl shadow-[0_0_50px_-10px]">

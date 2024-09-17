@@ -1,6 +1,7 @@
 import Image from "next/image"
+import React from "react"
 
-const Header = () => {
+const Header: React.FC = () => {
     return (
         <header className="w-full flex justify-center items-center">
             <div className="p-5 max-w-[1400px] w-full flex justify-between items-center">

@@ -1,6 +1,7 @@
+import React from "react"
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa6"
 
-const Footer = () => {
+const Footer: React.FC = () => {
     return (
         <footer className="w-full flex justify-center items-center mb-20">
             <div className="max-w-[1400px] w-full flex justify-between items-start">

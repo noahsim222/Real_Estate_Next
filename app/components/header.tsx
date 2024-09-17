@@ -9,7 +9,7 @@ const Header = () => {
                     alt="Real Estate Logo"
                     width={100}
                     height={100}
-                    className="rounded-3xl"
+                    className="rounded-3xl sm:block hidden"
                 />
                 <h1 className="text-black font-bold text-3xl font-pavelt">Real Estate</h1>
                 <div className="flex gap-5 text-lg font-bold">

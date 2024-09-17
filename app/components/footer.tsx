@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa6"
 
 const Footer = () => {
     return (
-        <footer className="w-full flex justify-center items-center">
+        <footer className="w-full flex justify-center items-center mb-20">
             <div className="max-w-[1400px] w-full flex justify-between items-start">
                 <div className="basis-1/2 text-center grid gap-5">
                     <h1 className="text-4xl font-bold">Real Estate Company</h1>
